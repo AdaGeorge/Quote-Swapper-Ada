@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import quotes from '../json/quotes.json'
+import QuoteButton from './QuoteButton'
 
 //Componente QuoteBox
 
@@ -32,7 +33,7 @@ const QuoteBox = () =>{
       <article className='card' style={{borderColor: `${color}`, boxShadow: `1px 1px 30px 9px ${color}`}}>
         <p className='card-quote'>{quote}</p>
         <h4 className='card-author'>- {author} -</h4>
-        <button className='card-btn' onClick={handlerQuote} style={{backgroundColor: `${color}`, boxShadow: `6px 1px 30px 2px ${color}`}}>Next</button>
+        <QuoteButton className='card-btn' handlerQuote = {handlerQuote} color={color}/>
       </article>
     </div>
   )
