@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-card{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.card{
+    width: 40%;
+    min-height: 30%;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.card-quote, .card-author{
+    padding: 25px;
+}
+
+.card-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 28%;
+    top: 47%;
+}
