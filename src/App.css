@@ -19,6 +19,10 @@
     font-family: sans-serif;
     color: white;
     text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 208px;
 }
 
 .card-quote, .card-author{
@@ -26,12 +30,48 @@
 }
 
 .card-btn{
-    height: 40px;
-    width: 40px;
+    height: 5em;
+    width: 5em;
     border-radius: 50%;
     border: none;
     position: absolute;
-    right: 28.5%;
+    right: 28%;
     top: 46%;
     cursor: pointer;
+}
+
+@media (max-width: 1026px) {
+
+    .card{
+        width: 70%;
+        min-height: 30%;
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+       
+    }
+
+    .card-btn{
+        height: 5em;
+        width: 5em;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        right: 20%;
+        top: 56%;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 400px){
+    .card-btn{
+        height: 5em;
+        width: 5em;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        right: 42%;
+        top: 78%;
+        cursor: pointer;
+    }
 }
